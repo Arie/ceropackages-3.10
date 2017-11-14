@@ -9,7 +9,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=tc-adv
 PKG_VERSION:=4.1.0-git
-PKG_RELEASE:=14
+PKG_RELEASE:=15
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=git://github.com/dtaht/tc-adv
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_RELEASE).tar.gz
@@ -36,8 +36,8 @@ endef
 
 define Package/tc-adv
 $(call Package/tc-adv/Default)
-  TITLE:=Traffic control utility with support for cake and fq_pie
-  DEPENDS:=+kmod-sched-core +kmod-sched-cake +kmod-sched-fq_pie
+  TITLE:=Traffic control utility with support for cake
+  DEPENDS:=+kmod-sched-core +kmod-sched-cake
 endef
 
 ifeq ($(BUILD_VARIANT),tiny)
