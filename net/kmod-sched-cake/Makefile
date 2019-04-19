@@ -1,4 +1,4 @@
-# 
+#
 # Copyright (C) 2015 OpenWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
@@ -10,11 +10,11 @@ include $(INCLUDE_DIR)/kernel.mk
 
 PKG_NAME:=sched-cake
 PKG_VERSION:=2016-git
-PKG_RELEASE:=23
+PKG_RELEASE:=24
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=git://github.com/dtaht/sch_cake
-PKG_SOURCE_VERSION:=bd5e6021f81635438d009cc5f8091f732d5bb78e
+PKG_SOURCE_VERSION:=6ff45613e0f59f26f68cf8fa70e4b0a89bd09ed0
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_BUILD_ID:=$(PKG_SOURCE_VERSION)
